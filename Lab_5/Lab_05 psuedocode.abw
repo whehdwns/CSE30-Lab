@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="81" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="0.99.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Tue Mar  7 14:57:00 2017
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.date">Tue Mar  7 14:28:52 2017
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="2" edit-time="1854" last-saved="1488927420" uid="0e8df26e-0385-11e7-9212-f29718e5c8fc">
+<version id="2" started="1488925732" uid="5fa68f04-0389-11e7-9212-f29718e5c8fc" auto="0" top-xid="37"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="36" props="page-margin-footer:0.5in; page-margin-header:0.5in">
+<p style="Normal" xid="37"><c>CSE 30 Lab_05 Psuedocode</c></p>
+<p style="Normal" xid="1"><c></c></p>
+<p style="Normal" xid="2"><c></c></p>
+<p style="Normal" xid="3" props="text-align:left; dom-dir:ltr"><c>int BinarySearch(int Array[], int low, int high, int key)</c></p>
+<p style="Normal" xid="4" props="text-align:left; dom-dir:ltr"><c>{</c></p>
+<p style="Normal" xid="5" props="text-align:left; dom-dir:ltr"><c>if(low &lt;= high)</c></p>
+<p style="Normal" xid="6" props="text-align:left; dom-dir:ltr"><c>{</c></p>
+<p style="Normal" xid="7" props="text-align:left; dom-dir:ltr"><c>int mid = (low+high)/2;</c></p>
+<p style="Normal" xid="8" props="text-align:left; dom-dir:ltr"><c>if(Array[mid] == key)</c></p>
+<p style="Normal" xid="9" props="text-align:left; dom-dir:ltr"><c>return mid;</c></p>
+<p style="Normal" xid="10" props="text-align:left; dom-dir:ltr"><c>else if(key &lt; Array[mid])</c></p>
+<p style="Normal" xid="11" props="text-align:left; dom-dir:ltr"><c>return BinarySearch(Array, low, mid-1, key);</c></p>
+<p style="Normal" xid="12" props="text-align:left; dom-dir:ltr"><c>else</c></p>
+<p style="Normal" xid="13" props="text-align:left; dom-dir:ltr"><c>return BinarySearch(Array, mid+1, high, key);</c></p>
+<p style="Normal" xid="14" props="text-align:left; dom-dir:ltr"><c>}</c></p>
+<p style="Normal" xid="15" props="text-align:left; dom-dir:ltr"><c>return -1;</c></p>
+<p style="Normal" xid="16" props="text-align:left; dom-dir:ltr"><c>}</c></p>
+<p style="Normal" xid="17" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="18" props="text-align:left; dom-dir:ltr"><c>Algorithm BinarySearch(A, L, H, K)</c></p>
+<p style="Normal" xid="39" props="text-align:left; dom-dir:ltr"><c>	L&lt;=H</c></p>
+<p style="Normal" xid="40" props="text-align:left; dom-dir:ltr"><c>		M=(L+H)/2</c></p>
+<p style="Normal" xid="41" props="text-align:left; dom-dir:ltr"><c>		A[M] ==K</c></p>
+<p style="Normal" xid="42" props="text-align:left; dom-dir:ltr"><c>			M</c></p>
+<p style="Normal" xid="43" props="text-align:left; dom-dir:ltr"><c>		else K&lt;A[M]</c></p>
+<p style="Normal" xid="44" props="text-align:left; dom-dir:ltr"><c>		BinarySearch(A, L,M-1, K);</c></p>
+<p style="Normal" xid="45" props="text-align:left; dom-dir:ltr"><c>	else </c></p>
+<p style="Normal" xid="47" props="text-align:left; dom-dir:ltr"><c>		BinarySearch(A, M+1, H,K)</c></p>
+<p style="Normal" xid="48" props="text-align:left; dom-dir:ltr"><c>	end if</c></p>
+<p style="Normal" xid="49" props="text-align:left; dom-dir:ltr"><c>end if</c></p>
+<p style="Normal" xid="51" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="56" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="57" props="text-align:left; dom-dir:ltr"><c>int BinarySearchL(int Array[], int low, int high, int key)</c></p>
+<p style="Normal" xid="59" props="text-align:left; dom-dir:ltr"><c>{</c></p>
+<p style="Normal" xid="60" props="text-align:left; dom-dir:ltr"><c>while(low &lt;= high)</c></p>
+<p style="Normal" xid="61" props="text-align:left; dom-dir:ltr"><c>{</c></p>
+<p style="Normal" xid="62" props="text-align:left; dom-dir:ltr"><c>int mid = (low+high)/2;</c></p>
+<p style="Normal" xid="63" props="text-align:left; dom-dir:ltr"><c>if(Array[mid] == key)</c></p>
+<p style="Normal" xid="64" props="text-align:left; dom-dir:ltr"><c>return mid;</c></p>
+<p style="Normal" xid="65" props="text-align:left; dom-dir:ltr"><c>else if(key &lt; Array[mid])</c></p>
+<p style="Normal" xid="66" props="text-align:left; dom-dir:ltr"><c>return BinarySearchL(Array, low, mid-1, key);</c></p>
+<p style="Normal" xid="67" props="text-align:left; dom-dir:ltr"><c>else</c></p>
+<p style="Normal" xid="68" props="text-align:left; dom-dir:ltr"><c>return BinarySearchL(Array, mid+1, high, key);</c></p>
+<p style="Normal" xid="69" props="text-align:left; dom-dir:ltr"><c>}</c></p>
+<p style="Normal" xid="70" props="text-align:left; dom-dir:ltr"><c>return -1;</c></p>
+<p style="Normal" xid="71" props="text-align:left; dom-dir:ltr"><c>}</c></p>
+<p style="Normal" xid="52" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="53" props="text-align:left; dom-dir:ltr"><c>Algorithm BinarySearchL(A, L, H,K)</c></p>
+<p style="Normal" xid="72" props="text-align:left; dom-dir:ltr"><c>	while(L&lt;=H)</c></p>
+<p style="Normal" xid="73" props="text-align:left; dom-dir:ltr"><c>		M=(L+H)/2;</c></p>
+<p style="Normal" xid="74" props="text-align:left; dom-dir:ltr"><c>		if(A[M] ==key)</c></p>
+<p style="Normal" xid="75" props="text-align:left; dom-dir:ltr"><c>			M</c></p>
+<p style="Normal" xid="76" props="text-align:left; dom-dir:ltr"><c>		else(K&lt;A[M])</c></p>
+<p style="Normal" xid="77" props="text-align:left; dom-dir:ltr"><c>		BinarySearchL(A, L, M-1, K)</c></p>
+<p style="Normal" xid="54" props="text-align:left; dom-dir:ltr"><c>		else </c></p>
+<p style="Normal" xid="78" props="text-align:left; dom-dir:ltr"><c>		BinarySearchL(A, M+1, H, K_)</c></p>
+<p style="Normal" xid="79" props="text-align:left; dom-dir:ltr"><c>		end if</c></p>
+<p style="Normal" xid="81" props="text-align:left; dom-dir:ltr"><c>	end while;</c></p>
+<p style="Normal" xid="55" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="19" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="20" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="21" props="text-align:left; dom-dir:ltr"><c></c></p>
+</section>
+</abiword>

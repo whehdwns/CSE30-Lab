@@ -1,0 +1,54 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <math.h>
+using namespace std;
+int binarySearch( int theArray[], int low, int high, int numLook, int &numChecks);
+int main(){
+	int arraySize=0;
+	cout<<"Enter the size of the array: ";
+	cin>>arraySize;
+	if(arraySize>0){
+	int* theArray= new int[arraySize];
+	cout<<"Enter increasing numbers in the array, seperated by a space, and press enter" ;
+	for(int i=0; i<arraySize; i++){
+		cin>>theArray[i];
+		if(i>0 && theArray[i] <theArray[i-1]){
+		cout<<"The values entered for the array is ascending order" ;
+		return 1;
+		}
+	}
+	int numLook;
+	cout<<"ENter a number to search for in the array: ";
+	cin>> numLook;
+	int numChecks=0;
+	int foundIndex= binarySearch(theArray, 0, arraySize-1, numLook, numChecks);
+	if(foundIndex != -1){
+		cout<<"Found key " <<numLook<< "at index "<<foundIndex<<"." <<endl;
+		cout<<"Find the value took" <<numChecks<< "checks"<<endl;
+		}
+	else
+	{
+	cout<<"The key " <<numLook<< "was not found in the array." <<endl;
+	//cout<<"I wasted" <<numChecks<<"checks  looking for value that is not in the array" <<endl;
+	}
+	}
+	else{
+	cout<<"ERROR: you entered an incorrect value for the arraySize" <<endl;
+	}
+	return 1;
+	}
+
+	int binarySearch( int theArray[], int low, int high, int numLook, int  &numChecks){
+	if(low> high)
+	return -1;
+	int middle= (int) ceil ((double) (low +high)/2) ;
+	numChecks++;
+	if(theArray[middle]==numLook)
+		return middle;
+	else if(theArray[middle] >numLook)
+		return binarySearch(theArray, low, middle-1, numLook, numChecks);
+	else
+		return binarySearch(theArray, middle+1, high, numLook,numChecks);
+}
+

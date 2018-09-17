@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="38" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="0.99.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Tue Mar  7 15:29:55 2017
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.date">Tue Mar  7 15:22:48 2017
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="2" edit-time="1026" last-saved="1488929395" uid="94f53da2-038b-11e7-9892-b2f7aac99011">
+<version id="2" started="1488928968" uid="f8b1c548-038d-11e7-9892-b2f7aac99011" auto="0" top-xid="38"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="28" props="page-margin-footer:0.5in; page-margin-header:0.5in">
+<p style="Normal" xid="29"><c>CSE30 Lab _06 Psuedocode</c></p>
+<p style="Normal" xid="1" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="19" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="20" props="text-align:left; dom-dir:ltr"><c>Time getTimeFromUser() //go back to main</c></p>
+<p style="Normal" xid="21" props="text-align:left; dom-dir:ltr"><c>		string time &amp; tmp;</c></p>
+<p style="Normal" xid="23" props="text-align:left; dom-dir:ltr"><c>		TimegottenTime;</c></p>
+<p style="Normal" xid="24" props="text-align:left; dom-dir:ltr"><c>		getLine(cin, time); //input</c></p>
+<p style="Normal" xid="25" props="text-align:left; dom-dir:ltr"><c>		</c></p>
+<p style="Normal" xid="26" props="text-align:left; dom-dir:ltr"><c>		tmp= time.substr(0,2);</c></p>
+<p style="Normal" xid="27" props="text-align:left; dom-dir:ltr"><c>		gottenTime.H= atoi(tmp.find_first_of(‘:’)+1. 2) //  number of Hour</c></p>
+<p style="Normal" xid="30" props="text-align:left; dom-dir:ltr"><c>		</c></p>
+<p style="Normal" xid="31" props="text-align:left; dom-dir:ltr"><c>		tmp= time.substr(time.find_first_of(‘:’) +1, 2)</c></p>
+<p style="Normal" xid="32" props="text-align:left; dom-dir:ltr"><c>		gottenTime. M= a</c><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">toi(</c><c>t</c><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">mp.c_str());</c><c> //Minutes</c></p>
+<p style="Normal" xid="33" props="text-align:left; dom-dir:ltr"><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">		</c></p>
+<p style="Normal" xid="34" props="text-align:left; dom-dir:ltr"><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">		tmp= time.substr(time.find_last_of(':')+1, 2);</c></p>
+<p style="Normal" xid="35" props="text-align:left; dom-dir:ltr"><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">		gottenTime.S= atoi(tmp.c.str()); //Seconds</c></p>
+<p style="Normal" xid="36" props="text-align:left; dom-dir:ltr"><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">		</c></p>
+<p style="Normal" xid="37" props="text-align:left; dom-dir:ltr"><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">	gottenTime;</c></p>
+<p style="Normal" xid="38" props="text-align:left; dom-dir:ltr"><c props="font-family:Times New Roman; font-size:12pt; color:000000; text-decoration:none; text-position:normal; font-weight:normal; font-style:normal; lang:en-US">end Time getTimeFromUser;</c></p>
+</section>
+</abiword>

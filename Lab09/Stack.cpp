@@ -1,0 +1,34 @@
+#include <iostream>
+#include "Stack.h"
+#include "LinkedList.h"
+
+using namespace std;
+
+Stack::Stack(){
+
+}
+
+Stack::~Stack(){
+
+}
+
+void Stack::push(int value){
+	insertAtFront(value);
+}
+
+int Stack::pop(){
+	//int value = top();
+
+	return removeFromFront();
+	//bool success = removeFromFront();
+	//return value;
+}
+
+int Stack::top(){
+	if(! isEmpty())
+		return (first-> val);
+	else
+		return 0;
+
+//return (*getFirst()).val;
+}

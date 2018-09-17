@@ -1,0 +1,39 @@
+#include <iostream>
+#include <iomanip>
+#include "Time.h"
+
+using namespace std;
+
+int main()
+{
+    Time startTime;
+    Time endTime;
+    cout << "Enter the start time for the class (format is HH:MM:SS): ";
+    startTime.getTimeFromUser();
+    
+    if(!startTime.validTime())
+    {
+        cout << "The start time entered is invalid!" << endl;
+        return 0;
+    }
+
+    cout << "Enter the end time for the class (format is HH:MM:SS): ";
+    endTime.getTimeFromUser();
+
+    if(!endTime.validTime())
+    {
+        cout << "The end time entered is invalid!" << endl;    
+        return 0;
+    }
+
+    cout << "The lecture starts at "; 
+    startTime.strTime24Hour();
+    cout << " and ends at "; 
+    endTime.strTime24Hour(); 
+    cout << endl;
+ 
+    return 1;
+}
+
+
+
